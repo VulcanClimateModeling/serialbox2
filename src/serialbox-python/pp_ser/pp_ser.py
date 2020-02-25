@@ -353,7 +353,10 @@ class PpSer:
     def __ser_verbatim(self, args):
         # simply remove $!SER directive for verbatim statements
         self.__line = ' '.join(args[1:]) + '\n'
-
+        for arg in args:
+            if 'fs_is_serialization_on' in arg:
+                self.__calls.add('fs_is_serialization_on')
+    
     # REGISTER directive
     def __ser_register(self, args):
 
