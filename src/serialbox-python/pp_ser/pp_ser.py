@@ -278,9 +278,9 @@ class PpSer:
             l += 'IF (' + if_statement + ') THEN\n'
             tab = '  '
 
-        l += tab + 'PRINT *, \'>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<\'\n'
-        l += tab + 'PRINT *, \'>>> WARNING: SERIALIZATION IS ON <<<\'\n'
-        l += tab + 'PRINT *, \'>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<\'\n'
+#        l += tab + 'PRINT *, \'>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<\'\n'
+#        l += tab + 'PRINT *, \'>>> WARNING: SERIALIZATION IS ON <<<\'\n'
+#        l += tab + 'PRINT *, \'>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<\'\n'
         l += tab + '\n'
         l += tab + '! setup serialization environment\n'
 
