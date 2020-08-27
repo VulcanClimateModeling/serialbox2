@@ -67,7 +67,7 @@ SUBROUTINE ppser_initialize(directory, prefix, mode, directory_ref, prefix_ref, 
                 mpi_rank, rprecision, rperturb, realtype, archive, unique_id)
   CHARACTER(LEN=*), INTENT(IN)           :: directory, prefix
   INTEGER, OPTIONAL, INTENT(IN)          :: mode
-  CHARACTER(LEN=*), OPTIONAL, INTENT(IN) :: prefix_ref, directory_ref  ! use a different serializer for reading (optional)
+  CHARACTER(LEN=*), OPTIONAL, INTENT(IN) :: directory_ref, prefix_ref ! use a different serializer for reading (optional)
   INTEGER, OPTIONAL, INTENT(IN)          :: mpi_rank
   REAL(KIND=8), OPTIONAL, INTENT(IN)     :: rprecision, rperturb
   INTEGER, OPTIONAL, INTENT(IN)          :: realtype
